@@ -1,0 +1,118 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="style.css">
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(235, 106, 83);  
+}  
+.container {  
+    padding: 50px;  
+  background-color: rgb(179, 245, 56);  
+}  
+form{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+padding: 10px 0;  
+}  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #22168b;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+  <form action="applicationdb.php" method="post"> 
+<form>  
+  <div class="container"> 
+  <center>  <h1> Student Application Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Class :  
+</label>   
+  
+<select name="course" required>  
+<option value="Course">Course</option>  
+<option value="first">1st standard</option>  
+<option value="second">2nd standard</option>  
+<option value="third">3rd standard</option>  
+<option value="fourth">4th standard</option>  
+<option value="fifth">5th standard</option>  
+<option value="sixth">6th standard</option>  
+<option value="seventh">7th standard</option>  
+<option value="eight">8thstandard</option>  
+<option value="ninth">9th standard</option>  
+<option value="tenth">10thstandard</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+phone :  
+</label>  
+<input type="text" name="phone" placeholder="phone no"  value="+91" size="2"/>  
+<label>
+  pincode:
+</label> 
+<input type="text" name="pincode" placeholder="pincode." size="6"/ required>   
+currentaddress :  
+<input type="text" name="currentaddress" rows="5" placeholder="currentaddress" value="address" required>  
+</input>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="fan"><b>Fathers name</b></label>  
+    <input type="text" placeholder="Enter Fathers name" name="fan" required>  
+  
+    <label for="mon"><b>Mothers Name</b></label>  
+    <input type="text" placeholder=" Enter Mothers name" name="mon" required>  
+    <button type="submit" class="registerbtn">submit</button>    
+</form>  
+</body>  
+</html>  
+
+
